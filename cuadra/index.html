@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuadra · El cuadre del día, en tu teléfono</title>
+<meta name="description" content="Cuenta lo que queda y Cuadra te dice cuánto vendiste, cuánto ganaste y si falta dinero en la caja. Sin internet. Gratis 14 días.">
+<meta name="theme-color" content="#4f46e5">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuadra">
+<meta property="og:title" content="Cuadra · El cuadre del día, en tu teléfono">
+<meta property="og:description" content="Cuenta lo que queda y Cuadra te dice cuánto vendiste, cuánto ganaste y si falta dinero en la caja. Sin internet. Gratis 14 días.">
+<meta property="og:url" content="https://michel8612.github.io/cuadra/">
+<meta property="og:image" content="https://michel8612.github.io/cuadra/img/vista-previa.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/icono-180.png">
+<link rel="alternate" hreflang="es" href="https://michel8612.github.io/cuadra/">
+<link rel="alternate" hreflang="en" href="https://michel8612.github.io/cuadra/en/">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:#1c1b19;background:#f5f4f0;line-height:1.55;font-size:17px}
+a{color:#4f46e5}
+.cont{max-width:1060px;margin:0 auto;padding:0 20px}
+.heroe{background:#4f46e5;color:#fff;overflow:hidden}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.marca{display:flex;align-items:center;color:#fff;text-decoration:none;font-weight:700;font-size:20px}
+.marca svg{margin-right:10px}
+.idioma{color:#fff;text-decoration:none;font-size:15px;border:1px solid rgba(255,255,255,.4);padding:6px 12px;border-radius:10px}
+.heroe-cuerpo{display:flex;align-items:center;padding:28px 0 0}
+.heroe-texto{flex:1;padding-bottom:48px}
+h1{font-size:44px;line-height:1.1;letter-spacing:-1px;margin:0 0 16px}
+.lema{font-size:19px;opacity:.92;margin:0 0 28px;max-width:520px}
+.boton{display:inline-flex;align-items:center;background:#fff;color:#4338ca;text-decoration:none;font-weight:700;font-size:18px;padding:17px 26px;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.boton svg{margin-right:10px}
+.boton:active{transform:scale(.98)}
+.meta{font-size:14px;opacity:.8;margin-top:12px}
+.confianza{display:flex;flex-wrap:wrap;margin:22px -6px 0;padding:0;list-style:none}
+.confianza li{display:flex;align-items:center;margin:4px 6px;font-size:15px;background:rgba(255,255,255,.14);padding:6px 12px;border-radius:999px}
+.confianza svg{margin-right:6px;color:#86efac}
+.heroe-telefono{flex-shrink:0;margin-left:40px;align-self:flex-end}
+.telefono{width:270px;border:10px solid #1c1b19;border-bottom:0;border-radius:38px 38px 0 0;overflow:hidden;background:#1c1b19;display:block}
+.telefono img{display:block;width:100%;height:auto;border-radius:28px 28px 0 0}
+section{padding:56px 0}
+h2{font-size:30px;letter-spacing:-.5px;margin:0 0 24px;line-height:1.2}
+.pasos{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:16px}
+.paso{background:#fff;border-radius:18px;padding:22px;border:1px solid rgba(28,27,25,.08)}
+.num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#ecebff;color:#3730a3;font-weight:700;margin-bottom:12px}
+.paso h3,.funcion h3{margin:0 0 6px;font-size:18px}
+.paso p,.funcion p{margin:0;color:#5f5e5a;font-size:15.5px}
+.aviso{display:flex;align-items:flex-start;background:#fdf1dc;color:#7a4504;border-radius:16px;padding:16px 18px;margin-top:16px;font-size:15.5px}
+.aviso svg{flex-shrink:0;margin-right:12px;margin-top:1px}
+.funciones{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:16px}
+.funcion{background:#fff;border-radius:18px;padding:22px;border:1px solid rgba(28,27,25,.08)}
+.funcion .ic{display:inline-flex;width:44px;height:44px;border-radius:12px;background:#ecebff;color:#4f46e5;align-items:center;justify-content:center;margin-bottom:12px}
+.capturas{display:flex;overflow-x:auto;margin:0 -20px;padding:4px 20px 12px;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory}
+.captura{flex:0 0 auto;width:250px;margin-right:18px;scroll-snap-align:start;text-align:center}
+.captura img{width:100%;height:auto;border-radius:26px;border:8px solid #1c1b19;display:block;background:#1c1b19}
+.captura p{color:#5f5e5a;font-size:15px;margin:10px 4px 0}
+.para{display:flex;flex-wrap:wrap;margin:-5px;padding:0;list-style:none}
+.para li{margin:5px;background:#fff;border:1px solid rgba(28,27,25,.1);border-radius:999px;padding:9px 16px;font-size:16px}
+.precio{background:#1c1b19;color:#fff;border-radius:24px;padding:36px;display:flex;align-items:center;justify-content:space-between}
+.precio h2{margin-bottom:8px}
+.precio p{margin:0;opacity:.8;max-width:560px}
+.precio .botones a{margin:6px 0 6px 12px}
+.boton.oscuro{background:#4f46e5;color:#fff;box-shadow:none}
+.boton.verde{background:#16a34a;color:#fff;box-shadow:none}
+details{background:#fff;border-radius:16px;margin-bottom:10px;border:1px solid rgba(28,27,25,.08)}
+summary{cursor:pointer;padding:18px 20px;font-weight:600;list-style:none;position:relative;padding-right:44px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:20px;top:14px;font-size:24px;color:#4f46e5;font-weight:400}
+details[open] summary:after{content:"−"}
+details p{margin:0;padding:0 20px 18px;color:#5f5e5a}
+footer{padding:36px 0 48px;color:#5f5e5a;font-size:15px;border-top:1px solid rgba(28,27,25,.1)}
+footer .marca{color:#1c1b19;margin-bottom:10px}
+footer a{color:#5f5e5a;margin-right:16px;display:inline-block;margin-top:6px}
+@media (max-width:820px){
+  h1{font-size:34px}
+  .heroe-cuerpo{display:block;text-align:center}
+  .lema{margin-left:auto;margin-right:auto}
+  .confianza{justify-content:center}
+  .heroe-texto{padding-bottom:32px}
+  .heroe-telefono{margin:0 auto;width:240px}
+  .telefono{width:240px}
+  .pasos,.funciones{grid-template-columns:1fr}
+  .paso{display:flex;align-items:flex-start;padding:18px}
+  .paso .num{flex-shrink:0;margin:0 14px 0 0}
+  .funcion{display:flex;align-items:flex-start;padding:18px}
+  .funcion .ic{flex-shrink:0;margin:0 14px 0 0}
+  .precio{display:block;padding:28px 22px}
+  .precio .botones a{margin:16px 0 0;display:flex;justify-content:center}
+  section{padding:44px 0}
+  .boton{width:100%;justify-content:center}
+}</style>
+</head>
+<body>
+<header class="heroe">
+  <div class="cont">
+    <nav class="nav"><a class="marca" href="https://michel8612.github.io/cuadra/"><svg width="36" height="36" viewBox="0 0 96 96" aria-hidden="true"><rect width="96" height="96" rx="22" fill="#fff"/><path d="M63.7 30.3A25 25 0 1 0 63.7 65.7" fill="none" stroke="#4F46E5" stroke-width="10" stroke-linecap="round"/><path d="M40 49L49 58L77 25" fill="none" stroke="#16A34A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>Cuadra</a><a class="idioma" href="en/" hreflang="en">English</a></nav>
+    <div class="heroe-cuerpo">
+      <div class="heroe-texto">
+        <h1>El cuadre del día, en tu teléfono</h1>
+        <p class="lema">Cuenta lo que queda y Cuadra te dice cuánto vendiste, cuánto ganaste y si falta dinero en la caja.</p>
+        <a class="boton" href="Cuadra.apk" download="Cuadra.apk" type="application/vnd.android.package-archive" id="descargar"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Descargar gratis para Android</a>
+        <div class="meta">Versión 1.1.0 · 3 MB · Android 6 o superior</div>
+        <ul class="confianza"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>14 días gratis</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Sin internet</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Sin registrarte</li></ul>
+      </div>
+      <div class="heroe-telefono"><div class="telefono"><img src="capturas/hoy.jpg" width="540" height="1100" alt="Cuentas lo que queda y ves la venta del día"></div></div>
+    </div>
+  </div>
+</header>
+<main>
+  <section id="instalar"><div class="cont">
+    <h2>Instálala en 3 pasos</h2>
+    <div class="pasos"><div class="paso"><div class="num">1</div><div><h3>Toca «Descargar»</h3><p>Si el navegador pregunta si quieres guardar el archivo, toca «Descargar de todas formas».</p></div></div><div class="paso"><div class="num">2</div><div><h3>Abre el archivo</h3><p>Toca «Abrir» en el aviso de descarga completa, o búscalo en Archivos → Descargas: se llama Cuadra.apk.</p></div></div><div class="paso"><div class="num">3</div><div><h3>Permite instalar</h3><p>La primera vez, Android te pide permitir apps de esa fuente. Actívalo, vuelve y toca el archivo otra vez: ahora sí sale «Instalar».</p></div></div></div>
+    <div class="aviso"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span>¿Sale un aviso de seguridad? Es normal en apps que no vienen de Google Play. Cuadra no pide permisos ni usa internet: toca «Instalar de todas formas».</span></div>
+  </div></section>
+  <section style="padding-top:0"><div class="cont">
+    <h2>Lo que hace por tu negocio</h2>
+    <div class="funciones"><div class="funcion"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><div><h3>Sabes lo que vendiste</h3><p>La venta sale sola de lo que cuentas: lo que había, lo que entró y lo que queda.</p></div></div><div class="funcion"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l9.5 17h-19z"/><path d="M12 10v4.5M12 17.5v.5"/></svg></div><div><h3>Te avisa si falta dinero</h3><p>Compara la caja con lo vendido y te dice si cuadra, si falta o si sobra.</p></div></div><div class="funcion"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.2c-.6-.8-1.5-1.2-2.6-1.2-1.6 0-2.7.8-2.7 2s1.1 1.7 2.8 2.1c1.7.4 2.8.9 2.8 2.1s-1.2 2-2.8 2c-1.2 0-2.2-.5-2.8-1.3M12 6.5V8M12 16v1.5"/></svg></div><div><h3>Ganancia real</h3><p>Pon el costo y el precio de cada producto y ve cuánto te deja de verdad.</p></div></div><div class="funcion"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r="1"/><path d="M3 3l18 18"/></svg></div><div><h3>Funciona sin internet</h3><p>Y en los apagones. Todo se guarda en el teléfono al momento.</p></div></div><div class="funcion"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12a8.5 8.5 0 0 1-12.4 7.5L3.5 21l1.6-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5"/></svg></div><div><h3>El cuadre por WhatsApp</h3><p>Manda el resumen del día al dueño con un toque.</p></div></div><div class="funcion"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="11" width="15" height="10" rx="2"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/></svg></div><div><h3>Tus datos son tuyos</h3><p>Nada sale de tu teléfono: sin cuentas, sin servidores, sin publicidad.</p></div></div></div>
+  </div></section>
+  <section style="padding-top:0"><div class="cont">
+    <h2>Así se ve</h2>
+    <div class="capturas"><figure class="captura" style="margin:0 18px 0 0"><img src="capturas/hoy.jpg" width="540" height="1100" loading="lazy" alt="Cuentas lo que queda y ves la venta del día"><p>Cuentas lo que queda y ves la venta del día</p></figure><figure class="captura" style="margin:0 18px 0 0"><img src="capturas/caja.jpg" width="540" height="1100" loading="lazy" alt="La caja te dice si falta dinero"><p>La caja te dice si falta dinero</p></figure><figure class="captura" style="margin:0 18px 0 0"><img src="capturas/productos.jpg" width="540" height="1100" loading="lazy" alt="Tus productos, tus precios, tu ganancia"><p>Tus productos, tus precios, tu ganancia</p></figure></div>
+  </div></section>
+  <section style="padding-top:0"><div class="cont">
+    <h2>Hecha para negocios que cuadran cada día</h2>
+    <ul class="para"><li>Cafeterías y paladares</li><li>Tiendas y bodegas</li><li>Panaderías y dulcerías</li><li>Puntos de venta</li></ul>
+  </div></section>
+  <section style="padding-top:0"><div class="cont">
+    <div class="precio">
+      <div><h2>Pruébala gratis 14 días</h2><p>Con todo incluido. Cuando termine la prueba, escríbenos por WhatsApp y te la activamos. Tus datos no se pierden.</p></div>
+      <div class="botones"><a class="boton oscuro" href="Cuadra.apk" download="Cuadra.apk"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Descargar gratis</a><a class="boton verde" href="https://wa.me/5356659464"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 12a8.5 8.5 0 0 1-12.4 7.5L3.5 21l1.6-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5"/></svg>Escríbenos por WhatsApp</a></div>
+    </div>
+  </div></section>
+  <section style="padding-top:0"><div class="cont">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Es segura?</summary><p>Sí. Está firmada por Silicon Bay, no pide permisos (ni cámara, ni contactos, ni ubicación) y no se conecta a internet.</p></details>
+    <details><summary>¿Por qué no está en Google Play?</summary><p>Por ahora la entregamos directamente desde esta página. Por eso Android muestra un aviso la primera vez.</p></details>
+    <details><summary>Al instalar dice «Cancelando»</summary><p>Pasa en algunos teléfonos (sobre todo Xiaomi y Redmi) justo después de dar el permiso. Abre Archivos → Descargas y toca Cuadra.apk otra vez: la segunda vez se instala.</p></details>
+    <details><summary>¿Necesita internet?</summary><p>No. Solo para descargarla. Después funciona sin conexión y sin corriente en el router.</p></details>
+    <details><summary>¿Y si pierdo o se rompe el teléfono?</summary><p>Tus datos están solo en el teléfono. Desde Ajustes → Copia de seguridad guardas una copia en WhatsApp o donde quieras, y la restauras en el teléfono nuevo.</p></details>
+    <details><summary>¿Cómo la activo cuando termine la prueba?</summary><p>En Ajustes → Licencia toca «Pedir código por WhatsApp». Te mandamos un código, lo pegas y listo.</p></details>
+    <details><summary>¿Sirve en mi teléfono?</summary><p>En cualquier Android 6 o más nuevo. Si te sale que hay que actualizar «Android System WebView», actualízalo y vuelve a abrirla.</p></details>
+  </div></section>
+</main>
+<footer><div class="cont">
+  <div class="marca"><svg width="28" height="28" viewBox="0 0 96 96" aria-hidden="true"><rect width="96" height="96" rx="22" fill="#4F46E5"/><path d="M63.7 30.3A25 25 0 1 0 63.7 65.7" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/><path d="M40 49L49 58L77 25" fill="none" stroke="#4ADE80" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="margin-left:8px">Cuadra</span></div>
+  <div>Cuadra es un producto de Silicon Bay. WhatsApp <a href="https://wa.me/5356659464">+53 5665 9464</a> · <a href="mailto:michelmiranda683@gmail.com">michelmiranda683@gmail.com</a></div>
+  <div><a href="guia.html"><b>Guía de uso completa</b></a><a href="legal/terminos-es.html">Términos y condiciones</a><a href="legal/privacidad-es.html">Política de privacidad</a><a href="legal/terceros-es.html">Software de terceros</a></div>
+</div></footer>
+</body>
+</html>
